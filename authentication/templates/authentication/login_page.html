@@ -1,0 +1,11 @@
+{% block content %}
+
+<h2>LOGIN PAGE</h2>
+{{message}}
+<form method='post'>
+    {{form.as_p}}
+    {% csrf_token %}
+    <button type='submit'>LOGIN</button>
+</form>
+<a href='{% url "signup" %}'><p>Not Registered yet? Click to Register!</p></a>
+{% endblock content %}
