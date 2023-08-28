@@ -1,5 +1,18 @@
 {% block content %}
 <h2>This is Home</h2>
 <p>Logged in as {{user.username}}</p>
+
+<table>
+    <tr>
+        <th>Items: </th>
+    </tr>
+    {% for task in items %}
+    <tr>
+        <td>{{task.title}} </td>
+    </tr>
+    {% empty %}
+    <p>No Items</p>
+    {% endfor %}
+</table>
 <a href='{% url "logout-user" %}'><p>Logout!</p></a>
 {% endblock content %}
