@@ -1,18 +1,23 @@
 {% block content %}
 <h2>This is Home</h2>
 <p>Logged in as {{user.username}}</p>
-
+<a href='{% url "task-form" %}'><p>Create Task!</p></a>
+<a href='{% url "logout-user" %}'><p>Logout!</p></a>
 <table>
     <tr>
         <th>Items: </th>
+        <th></th>
     </tr>
     {% for task in items %}
     <tr>
         <td>{{task.title}} </td>
+        <td><a href='{% url "edit-task" task.id %}'>View</a></td>
+        <td><a href='{% url "delete-task" task.id %}'>Delete</a></td>
     </tr>
+    
     {% empty %}
     <p>No Items</p>
     {% endfor %}
 </table>
-<a href='{% url "logout-user" %}'><p>Logout!</p></a>
+
 {% endblock content %}
