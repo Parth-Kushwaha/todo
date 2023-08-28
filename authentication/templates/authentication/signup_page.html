@@ -6,4 +6,5 @@
     {% csrf_token %}
     <button type='submit'>Register!</button>
 </form>
+<p>Already registered?, Go to <a href='{% url "login" %}'>Login</a></p>
 {% endblock content %}
