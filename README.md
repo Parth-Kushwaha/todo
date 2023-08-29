@@ -18,20 +18,25 @@ Run the command: python manage.py runserver
 And copy past the link on browser or click follow it
 
 Login Page:
-![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/0ec0b25e-2db2-431b-a3f1-c610ed2cce9c)
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/5c643112-bfd4-4dc6-a18f-3ce017499f23)
 
 User Registration Page:
-![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/3ae90c77-f9ff-47de-b3e6-79834615efce)
-
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/c5392d92-368a-4b2e-a4e3-5bbe32163628)
 
 Home Page:
-![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/bbd9208a-95cc-42d9-b30d-79c95473bbda)
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/efd3a9f5-27e5-457a-b555-c02537910bb1)
+
 
 Create Task Page:
-![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/6233c431-96b2-45ac-a1ab-ebfb81abce74)
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/359fec2c-f0cf-4ace-a6d6-404b0576b9a9)
+
+Update Task Page:
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/3a7fee22-fb00-4767-bb27-b2e8b795dd40)
+
 
 Delete Task Page:
-![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/c9cbfabe-21cb-4434-942d-f40ff6874243)
+![image](https://github.com/Parth-Kushwaha/todo/assets/105568566/b0dfa6a3-8b16-488c-8578-cea176610266)
+
 
 
 
