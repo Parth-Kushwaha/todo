@@ -55,4 +55,4 @@ def task_delete(request,task_id):
     if request.method=='POST':
         task.delete()
         return redirect('home')
-    return render(request, 'tasklist/delete_confirm.html')
+    return render(request, 'tasklist/delete_confirm.html',{'task':task})

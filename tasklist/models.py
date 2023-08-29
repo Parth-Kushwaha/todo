@@ -6,7 +6,7 @@ from authentication.models import User
 class TaskList(models.Model):
     user=models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     title=models.CharField(max_length=200)
-    desc=models.TextField()
+    desc=models.TextField(blank=True)
     created=models.DateTimeField(auto_now_add=True)
     complete=models.BooleanField(default=False)
 
