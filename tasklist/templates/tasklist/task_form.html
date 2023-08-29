@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class='header-bar' style="background-color:rgb(240, 221, 228);">
+    <a href='{% url "home" %}'>&#8592;BACK</a>
+</div>
 <h2>Create a task: </h2>
 <form method='post'>
     {{form.as_p}}

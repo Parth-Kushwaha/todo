@@ -3,6 +3,10 @@
 
 <h2>SIGNUP PAGE:</h2>
 <form method='post'>
+    {% comment %} <label>{{form.username.label}}</label>
+    {{form.username}}
+    <label>{{form.password1.label}}</label>
+    {{form.password1}} {% endcomment %}
     {{form.as_p}}
     {% csrf_token %}
     <button class='button' type='submit'>Register!</button>
