@@ -21,11 +21,14 @@ import tasklist.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('', authentication.views.login_user, name='login' ),
+    path('logout/', authentication.views.logout_user,name='logout-user'),
     path('signup/',authentication.views.signup_user,name='signup'),
+
     path('home/',tasklist.views.home_view, name='home'),
     path('createtask/',tasklist.views.task_create,name='task-form'),
     path('edittask/<int:task_id>', tasklist.views.task_change, name='edit-task'),
     path('deletetask/<int:task_id>', tasklist.views.task_delete, name='delete-task'),
-    path('logout/', authentication.views.logout_user,name='logout-user'),
+    
 ]

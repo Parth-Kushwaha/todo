@@ -3,7 +3,6 @@ from django.contrib.auth import login,logout, authenticate
 from . import forms 
 
 def login_user(request):
-    message='message:'
     form=forms.loginForm()
     if request.method=='POST':
         form=forms.loginForm(request.POST)
@@ -17,7 +16,7 @@ def login_user(request):
                 return redirect('home')
             else:
                 message='Login Failed'
-    return render(request, 'authentication/login_page.html', context={'form':form, 'message':message})
+    return render(request, 'authentication/login_page.html', context={'form':form})
 
 def signup_user(request):
     form=forms.SignUpForm()

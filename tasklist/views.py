@@ -6,8 +6,17 @@ from . import forms
 # Create your views here.
 @login_required
 def home_view(request):
-    items= TaskList.objects.all()
-    return render(request, 'tasklist/home.html',context={"items":items})
+    items= TaskList.objects.filter(user=request.user)
+    incomplete_items=TaskList.objects.filter(user=request.user,complete=False).count()
+
+    search_input=request.GET.get('search-area') or ''
+    if search_input:
+        items=TaskList.objects.filter(user=request.user, title__icontains=search_input)
+
+    context={"items":items,
+              'count':incomplete_items,
+              'search':search_input}
+    return render(request, 'tasklist/home.html',context)
 
 @login_required
 def task_create(request):
